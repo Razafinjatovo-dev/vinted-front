@@ -1,0 +1,157 @@
+.sell-your-item-button, .Header-logOut-button{
+  background-color: #21aeb6;
+  color: white;
+  border: none;
+  width: 50%;
+  height: 40px;
+}
+
+/* Extra small devices (phones, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .LogoWrapper {
+    padding-top: 10px;
+    /* background-color: red; */
+    /* width: 100vw; */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Header-VintedLogo {
+    /* border: 2px solid red; */
+    width: 84px;
+    height: 32px;
+  }
+  .Header-searchbox-banner {
+    /* background-color: purple; */
+    border-top: 1px solid lightgrey;
+    border-bottom:1px solid lightgrey;
+    /* width: 100vw; */
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Header-searchbox-wrapper {
+    /* background-color: black; */
+    background-color: 	#F5F5F5;
+    width: 80%;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .Header-searchbox-input {
+    background-color: 	#F5F5F5;
+    width: 94%;
+    height: 40px;
+    border: none;
+  }
+  .Header-Signup-Login {
+    /* background-color: yellow; */
+    /* border: 2px dotted blue; */
+    padding:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Header-Signup-Login-ButtonsWrapper {
+    border: 2px solid #09AEB6;
+    background-color: white;
+    color: #21aeb6;
+    width: 85%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Header-Signup-Login-ButtonsWrapper p,
+  span {
+    color: #21aeb6;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .HeaderContainer {
+    /* background-color: aqua; */
+    display: flex;
+    padding: 10px;
+  }
+
+  .Header-pageContent-width-harmonizer {
+    /* background-color: red; */
+    /* border: 2px dotted black; */
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .Header-searchbox-wrapper {
+    /* background-color: black; */
+    background-color: #F5F5F5;
+    min-width: 400px;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .Header-searchbox-input {
+    background-color: #F5F5F5;
+    width: 94%;
+    height: 40px;
+    border: none;
+  }
+
+  .Header-Signup-Login-ButtonsWrapper {
+    border: 2px solid green;
+    background-color: white;
+    color: #21aeb6;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Header-Signup-Login-ButtonsWrapper p,
+  span {
+    color: #21aeb6;
+  }
+
+  .sell-your-item-button, .Header-logOut-button{
+    background-color: #21aeb6;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .HeaderContainer {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .Header-pageContent-width-harmonizer {
+    /* background-color: red; */
+    /* border: 2px dotted black; */
+    width: 1200px;
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sell-your-item-button, .Header-logOut-button{
+    background-color: #21aeb6;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 40px;
+  }
+}

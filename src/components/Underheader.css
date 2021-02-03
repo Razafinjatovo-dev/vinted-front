@@ -1,0 +1,112 @@
+.Underheader-big-picture img {
+  max-width: 100%;
+}
+
+/* Extra small devices (phones, 720px and down) */
+@media only screen and (max-width: 720px) {
+  .Underheader-white-square {
+    /* background-color: brown; */
+    /* margin-top:-10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: black;
+    padding: 10px;
+  }
+  .Underheader-white-square button {
+    background-color: #21aeb6;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 95%;
+    height: 50px;
+  }
+}
+
+/* Medium devices (landscape tablets, 720px and up) */
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
+  .Underheader-wrapper {
+    position: relative;
+    /* border: 10px solid red; */
+  }
+
+  .Underheader-white-square {
+    /* background-color: brown; */
+    background-color: white;
+    width: 280px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .Underheader-white-square button {
+    background-color: #21aeb6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 95%;
+    height: 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Underheader-big-picture img {
+    display: none;
+  }
+  .Underheader-wrapper {
+    /* position: relative; */
+    /* border: 10px solid red; */
+    background: url(../assets/bigPicture.jpg);
+    background-size: cover;
+    background-position-y: -90px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+  }
+  .Underheader-pageContent-width-harmonizer {
+      /* border: dashed red 3px; */
+    position: relative;
+    width: 1200px;
+    height: 500px;
+  }
+  .Underheader-white-square {
+    background-color: white;
+    width: 280px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .Underheader-white-square button {
+    background-color: #21aeb6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 95%;
+    height: 50px;
+  }
+}

@@ -1,0 +1,140 @@
+/* Extra small devices (phones, 720px and down) */
+@media only screen and (max-width: 720px) {
+  .HomepageOffer {
+    /* background-color: orange; */
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .offerSheet {
+    /* background-color: pink; */
+    /* border: 2px dotted black; */
+    background-color: #f8f8f8;
+    width: calc(100vw / 2 - 20px);
+    min-height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin-bottom: 20px;
+  }
+  .itemPicture {
+    width: calc(100vw / 2 - 20px);
+    height: calc(100vw / 2 - 20px);
+  }
+  .itemPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .offerSheet span {
+    color: grey;
+  }
+  .offerSheet_Price {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 992px) {
+  .offerSheet {
+    /* border:3px dashed green; */
+    /* background-color: pink; */
+    background-color: f8f8f8;
+    width: calc(100vw / 3 - 20px);
+    min-height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin-bottom: 20px;
+  }
+  .itemPicture {
+    width: calc(100vw / 3 - 20px);
+    height: calc(100vw / 3 - 20px);
+  }
+  .itemPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .HomepageOffer {
+    /* background-color: orange; */
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .offerSheet span {
+    color: grey;
+  }
+  .offerSheet_Price {
+    font-weight: bold;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .HomepageOffer {
+    /* background-color: orange; */
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .offerSheet {
+    /* border:3px dashed green; */
+    /* background-color: pink; */
+    background-color: f8f8f8;
+    width: calc(100vw / 4 - 20px);
+    min-height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin-bottom: 20px;
+  }
+  .itemPicture {
+    width: calc(100vw / 4 - 20px);
+    height: calc(100vw / 4 - 20px);
+  }
+  .itemPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .HomepageOffer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .HomepageOffer-pageContent-width-harmonizer {
+    /* background-color: aqua; */
+    /* border: 3px dashed black; */
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+  }
+  .offerSheet {
+    /* border:3px dashed green; */
+    /* background-color: pink; */
+    background-color: #f8f8f8;
+    width: calc(1200px / 5 - 20px);
+    min-height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin-bottom: 20px;
+  }
+  .itemPicture {
+    width: calc(1200px / 5 - 20px);
+    height: calc(100vw / 5 - 20px);
+  }
+  .itemPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
