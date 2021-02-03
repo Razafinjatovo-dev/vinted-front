@@ -71,3 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Vinted-Frontend
 # my-repository
 # my-repository
+# Vinted_Frontend
