@@ -18,7 +18,7 @@ require("dotenv").config();
 library.add(faEye, faEyeSlash, faSearch);
 
 function App() {
-  const Url = "http://localhost:3000";
+  const Url = "https://vintweed.herokuapp.com";
   const [tokenCookies, setTokenCookies] = useState();
   const [isConnected, setIsConnected] = useState(false);
   const [title, setTitle] = useState("");
