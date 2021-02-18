@@ -7,7 +7,7 @@ import Cookies from "js-cookie";
 
 const Signup = (props) => {
   let history = useHistory();
-  const { Url, setIsConnected } = props;
+  const { Url, setIsConnected, setTokenCookies } = props;
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -25,6 +25,7 @@ const Signup = (props) => {
         username: username,
         password: password,
       });
+      setTokenCookies(response.data.token);
       Cookies.set("userToken", response.data.token);
       setIsConnected(true);
       history.push("/");

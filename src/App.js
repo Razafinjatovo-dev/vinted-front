@@ -59,6 +59,7 @@ function App() {
               Url={Url}
               isConnected={isConnected}
               setIsConnected={setIsConnected}
+              setTokenCookies={setTokenCookies}
             />
           </Route>
           <Route path="/Offer/:id">
