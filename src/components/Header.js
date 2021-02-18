@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Filter from "./Filter";
 import VintedLogo from "../assets/VintedLogo.png";
 import "./Header.css";
 
 const Header = (props) => {
-  const { isConnected, setIsConnected, setTokenCookies } = props;
+  const {
+    isConnected,
+    setIsConnected,
+    setTokenCookies,
+    title,
+    setTitle,
+    priceMin,
+    setPriceMin,
+    priceMax,
+    setPriceMax,
+    sort,
+    setSort,
+    skip,
+    setSkip,
+    page,
+    setPage,
+    limit,
+    setLimit,
+  } = props;
   let history = useHistory();
+
+  const handleTitle = (event) => {
+    setTitle(event.target.value);
+  };
 
   const connectedHeader = (
     <div className="HeaderContainer">
@@ -28,20 +51,22 @@ const Header = (props) => {
               className="Header-searchbox"
               type="search"
               placeholder="Rechercher des articles"
-              name="q"
+              onChange={handleTitle}
+              value={title}
             />
           </div>
+          <Filter />
         </div>
 
         <Link to="/">
           <button
             className="Header-logOut-button"
             onClick={() => {
-              // Action 1: supprimmer le cookie;
+              // Etape 1: supprimmer le cookie;
               setTokenCookies("");
-              //  Action 2: mettre state isConnected à false
+              //  Etape 2: mettre state isConnected à false
               setIsConnected(false);
-              //  Action 3 redirect vers page de connexion
+              //  Etape 3 redirect vers page de connexion
               history.push("/Login");
             }}
           >
@@ -74,11 +99,18 @@ const Header = (props) => {
               className="Header-searchbox-input"
               type="search"
               placeholder="Rechercher des articles"
-              name="q"
+              onChange={handleTitle}
             />
           </div>
         </div>
-
+        <Filter
+          priceMin={priceMin}
+          setPriceMin={setPriceMin}
+          priceMax={priceMax}
+          setPriceMax={setPriceMax}
+          sort={sort}
+          setSort={setSort}
+        />
         <div className="Header-Signup-Login">
           <div className="Header-Signup-Login-ButtonsWrapper">
             <Link style={{ textDecoration: "none" }} to="/Signup">
@@ -90,9 +122,6 @@ const Header = (props) => {
             </Link>
           </div>
         </div>
-        {/* <Link to="/Login">
-        <button className="Header-sellItem-button">Vends tes articles</button>
-        </Link> */}
       </div>
     </div>
   );

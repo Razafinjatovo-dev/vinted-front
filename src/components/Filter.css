@@ -1,0 +1,14 @@
+.Filter_Wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.Price_Filters{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.Filter_Wrapper label{
+    margin-left: 2px;
+    margin-right: 2px;
+}

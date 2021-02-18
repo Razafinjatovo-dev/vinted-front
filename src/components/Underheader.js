@@ -7,7 +7,6 @@ const Underheader = (props) => {
   const { isConnected } = props;
   let history = useHistory();
   const handleSellClick = () => {
-    // console.log("sell item");
     if (isConnected === false) {
       history.push("/Login");
     } else {
@@ -16,7 +15,7 @@ const Underheader = (props) => {
   };
   return (
     <div className="Underheader-wrapper">
-      <div  className="Underheader-pageContent-width-harmonizer">
+      <div className="Underheader-pageContent-width-harmonizer">
         <div className="Underheader-big-picture">
           <img src={bigPicture} alt="" />
         </div>

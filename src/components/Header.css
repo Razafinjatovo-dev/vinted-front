@@ -1,4 +1,5 @@
-.sell-your-item-button, .Header-logOut-button{
+.sell-your-item-button,
+.Header-logOut-button {
   background-color: #21aeb6;
   color: white;
   border: none;
@@ -6,26 +7,30 @@
   height: 40px;
 }
 
+.Header-searchbox-input {
+  outline: none;
+}
+
 /* Extra small devices (phones, 992px and down) */
 @media only screen and (max-width: 992px) {
   .LogoWrapper {
     padding-top: 10px;
-    /* background-color: red; */
-    /* width: 100vw; */
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 84px;
+    height: 32px;
   }
   .Header-VintedLogo {
     /* border: 2px solid red; */
-    width: 84px;
-    height: 32px;
+    width: 100%;
+    height: auto;
   }
   .Header-searchbox-banner {
     /* background-color: purple; */
     border-top: 1px solid lightgrey;
-    border-bottom:1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     /* width: 100vw; */
     height: 70px;
     display: flex;
@@ -35,27 +40,28 @@
 
   .Header-searchbox-wrapper {
     /* background-color: black; */
-    background-color: 	#F5F5F5;
+    background-color: #f5f5f5;
     width: 80%;
     padding: 0px 10px 0px 10px;
   }
 
   .Header-searchbox-input {
-    background-color: 	#F5F5F5;
+    background-color: #f5f5f5;
     width: 94%;
     height: 40px;
     border: none;
+    outline: none;
   }
   .Header-Signup-Login {
     /* background-color: yellow; */
     /* border: 2px dotted blue; */
-    padding:5px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .Header-Signup-Login-ButtonsWrapper {
-    border: 2px solid #09AEB6;
+    border: 2px solid #09aeb6;
     background-color: white;
     color: #21aeb6;
     width: 85%;
@@ -91,20 +97,21 @@
 
   .Header-searchbox-wrapper {
     /* background-color: black; */
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     min-width: 400px;
     padding: 5px 10px 5px 10px;
   }
 
   .Header-searchbox-input {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     width: 94%;
     height: 40px;
     border: none;
+    outline: none;
   }
 
   .Header-Signup-Login-ButtonsWrapper {
-    border: 2px solid green;
+    border: 2px solid #23aeb6;
     background-color: white;
     color: #21aeb6;
     width: 200px;
@@ -119,7 +126,8 @@
     color: #21aeb6;
   }
 
-  .sell-your-item-button, .Header-logOut-button{
+  .sell-your-item-button,
+  .Header-logOut-button {
     background-color: #21aeb6;
     border-radius: 5px;
     color: white;
@@ -137,6 +145,17 @@
     justify-content: center;
     padding: 10px;
   }
+
+  .LogoWrapper {
+    /* border: 2px solid red; */
+    width: 100px;
+  }
+  .Header-VintedLogo {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+  }
+
   .Header-pageContent-width-harmonizer {
     /* background-color: red; */
     /* border: 2px dotted black; */
@@ -146,7 +165,8 @@
     justify-content: space-around;
     align-items: center;
   }
-  .sell-your-item-button, .Header-logOut-button{
+  .sell-your-item-button,
+  .Header-logOut-button {
     background-color: #21aeb6;
     border-radius: 5px;
     color: white;
@@ -154,4 +174,20 @@
     width: 200px;
     height: 40px;
   }
+}
+
+.Header-searchbox-banner {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header-searchbox {
+  outline: none;
+  border: none;
+  background-color: #f5f5f5;
+  /* background-color: red; */
+  height: 40px;
+  width: 300px;
 }

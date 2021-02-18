@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const HomepageOffers = (props) => {
   const { database } = props;
 
-  // console.log(database)
 
   return (
     <div className="HomepageOffer-pageContent-width-harmonizer">
@@ -17,7 +16,6 @@ const HomepageOffers = (props) => {
             >
               <div className="offerSheet">
                 <div className="HomepageOffers-userInfo">
-                  <img className="userPhoto" alt="userphoto" />
                   <span>{offer.owner.account.username}</span>
                 </div>
 
