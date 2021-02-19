@@ -56,13 +56,7 @@ const Publish = (props) => {
   return (
     <div>
       {creatingOffer === true ? (
-        <Loader
-          type="Puff"
-          color="#00BFFF"
-          height={100}
-          width={100}
-          timeout={10000} //10 secs
-        />
+        <p>Page Loading...</p>
       ) : (
         <div className="PublishForm_Wrapper">
           <form onSubmit={handleSubmit}>

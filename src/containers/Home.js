@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import "./Home.css";
 import HomepageOffers from "../components/HomepageOffers";
 import Underheader from "../components/Underheader";
+import Loading from "../components/Loading"
 
 const Home = (props) => {
   const {
@@ -31,7 +32,7 @@ const Home = (props) => {
     fetchData();
   }, [Url, isConnected, title, priceMin, priceMax, sort, skip, page, limit]);
   return isLoading ? (
-    <p>En cours de chargement...</p>
+    <Loading/>
   ) : (
     <div>
       <Underheader isConnected={isConnected} />

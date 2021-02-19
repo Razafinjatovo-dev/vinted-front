@@ -4,9 +4,11 @@ import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
+import Loading from "../components/Loading";
 
 const Signup = (props) => {
   let history = useHistory();
+  const [isLoading, setIsLoading] = useState(false);
   const { Url, setIsConnected, setTokenCookies } = props;
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -20,6 +22,7 @@ const Signup = (props) => {
     }
 
     try {
+      setIsLoading(true);
       const response = await axios.post(`${Url}/user/signup`, {
         email: email,
         username: username,
@@ -28,13 +31,16 @@ const Signup = (props) => {
       setTokenCookies(response.data.token);
       Cookies.set("userToken", response.data.token);
       setIsConnected(true);
+      setIsLoading(false)
       history.push("/");
     } catch (error) {
       setErrorMessage(error.response.data.message);
       console.log(error);
     }
   };
-  return (
+  return isLoading ? (
+    <Loading/>
+  ) :(
     <div className="Signup-Wrapper">
       <div className="Signup-Border">
         <h1>S'inscrire</h1>
